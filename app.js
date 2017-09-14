@@ -19,8 +19,8 @@ const romanHash = {
 let numeralConverter = function(numStr) {
   let roman = [];
   for (var key in romanHash) {
-    roman.push(key.repeat(Number(numString) / romanHash[key]));
-    numString = Number(numString) % romanHash[key];
+    roman.push(key.repeat(Number(numStr) / romanHash[key]));
+    numString = Number(numStr) % romanHash[key];
   }
   return roman.join('');
 }
@@ -35,7 +35,7 @@ window.onload = function() {
 let printConverted = function(event) {
   event.preventDefault();
   // console.log(this)
-  var number = this.xnum.value
-  var outputDiv = document.querySelector('.output-div')
-  // outputDiv.innerText = numeralConverter(number)
+  var num = this.xnum.value;
+  var outputDiv = document.querySelector('.output-div');
+  outputDiv.innerText = numeralConverter(num);
 }
