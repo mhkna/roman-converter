@@ -20,7 +20,7 @@ let numeralConverter = function(numStr) {
   let roman = [];
   for (var key in romanHash) {
     roman.push(key.repeat(Number(numStr) / romanHash[key]));
-    numString = Number(numStr) % romanHash[key];
+    numStr = Number(numStr) % romanHash[key];
   }
   return roman.join('');
 }
