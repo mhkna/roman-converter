@@ -34,7 +34,8 @@ window.onload = function() {
 //print output to DOM
 let printConverted = function(event) {
   event.preventDefault();
-  // var number = this.number.value
-  // var outputDiv = document.querySelector('.output-div')
+  // console.log(this)
+  var number = this.xnum.value
+  var outputDiv = document.querySelector('.output-div')
   // outputDiv.innerText = numeralConverter(number)
 }
