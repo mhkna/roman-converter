@@ -27,12 +27,14 @@ let numeralConverter = function(numStr) {
 
 //DOM logic
 window.onload = function() {
-  const form = document.querySelector('input-form');
+  const form = document.querySelector('.input-form');
   form.addEventListener('submit', printConverted);
 }
 
 //print output to DOM
 let printConverted = function(event) {
   event.preventDefault();
-  // const outputDiv = document
+  // var number = this.number.value
+  // var outputDiv = document.querySelector('.output-div')
+  // outputDiv.innerText = numeralConverter(number)
 }
