@@ -28,5 +28,5 @@ let numeralConverter = function(numStr) {
 //print output to DOM
 let printConverted = function(event) {
   event.preventDefault();
-  var outputDiv = document
+  // const outputDiv = document
 }
