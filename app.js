@@ -25,6 +25,12 @@ let numeralConverter = function(numStr) {
   return roman.join('');
 }
 
+//DOM logic
+window.onload = function() {
+  const form = document.querySelector('input-form');
+  form.addEventListener('submit', printConverted);
+}
+
 //print output to DOM
 let printConverted = function(event) {
   event.preventDefault();
