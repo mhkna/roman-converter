@@ -24,3 +24,8 @@ let numeralConverter = function(numStr) {
   }
   return roman.join('');
 }
+
+//print output to DOM
+let printConverted = function(event) {
+  event.preventDefault();
+}
