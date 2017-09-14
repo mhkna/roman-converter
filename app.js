@@ -1,5 +1,5 @@
 //create roman hash table
-let romanHash = {
+const romanHash = {
   'M': 1000,
   'CM': 900,
   'D': 500,
@@ -16,7 +16,7 @@ let romanHash = {
 }
 
 //number converter logic
-var numeralConverter = function(numStr) {
+let numeralConverter = function(numStr) {
   let roman = [];
   for (var key in romanHash) {
     roman.push(key.repeat(Number(numString) / romanHash[key]));
