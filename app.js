@@ -35,7 +35,7 @@ window.onload = function() {
 let printConverted = function(event) {
   event.preventDefault();
   // console.log(this)
-  var num = this.xnum.value;
-  var outputDiv = document.querySelector('.output-div');
+  let num = this.xnum.value;
+  const outputDiv = document.querySelector('.output-div');
   outputDiv.innerText = numeralConverter(num);
 }
